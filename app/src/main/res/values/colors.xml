@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#174143</color>
+    <color name="Whi_green">#427A76</color>
+    <color name="wedding">#F5E5E1</color>
+    <color name="orange">#F9B487</color>
+    <color name="light_green">#DDF4E7</color>
+    <color name="grey">#758A93</color>
+</resources>

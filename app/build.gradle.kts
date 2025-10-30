@@ -54,4 +54,5 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:5.0.5")
     implementation("com.google.code.gson:gson:2.13.2")
     implementation("com.google.android.material:material:1.12.0")
+
 }

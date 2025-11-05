@@ -31,7 +31,7 @@ class CategoryAdapter(val items: MutableList<CategoryModel>)
 
     }
 
-    override fun onBindViewHolder(holder: CategoryAdapter.Viewholder, position: Int) {
+    override fun onBindViewHolder(holder: CategoryAdapter.Viewholder, position:Int) {
         val item = items[position]
         holder.binding.titleCat.text=item.title
         Glide.with(holder.itemView.context).load(item.picUrl).into(holder.binding.pacCat)

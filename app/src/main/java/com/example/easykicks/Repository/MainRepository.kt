@@ -3,7 +3,7 @@ package com.example.easykicks.Repository
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.easykicks.Model.CategoryModel
-import com.example.easykicks.Model.ItemModel
+import com.example.easykicks.Model.ItemsModel
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -34,16 +34,16 @@ class MainRepository {
         })
         return categoryLiveData
     }
-    fun loadBestSellers(): LiveData<MutableList<ItemModel>> {
-        val BestSellerLiveData = MutableLiveData<MutableList<ItemModel>>()
+    fun loadBestSellers(): LiveData<MutableList<ItemsModel>> {
+        val BestSellerLiveData = MutableLiveData<MutableList<ItemsModel>>()
         val ref=firebaseDatabase.getReference("BestSeller")
 
 
         ref.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
-                val lists = mutableListOf<ItemModel>()
+                val lists = mutableListOf<ItemsModel>()
                 for (childSnapShot in snapshot.children) {
-                    val list = childSnapShot.getValue(ItemModel::class.java)
+                    val list = childSnapShot.getValue(ItemsModel::class.java)
                     if(list!=null){
                         lists.add(list)
                     }

@@ -10,7 +10,7 @@
     android:background="@color/white"
     >
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -19,7 +19,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -38,7 +39,7 @@
                         android:id="@+id/imageView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="24dp"
+                        android:layout_marginEnd="16dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -62,8 +63,7 @@
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Save Up to 30$
-on sale Sneakers"
+                        android:text="Save Up to 30JD on sale Sneakers"
                         android:textColor="@color/white"
                         android:textSize="17sp"
                         app:layout_constraintStart_toStartOf="@+id/textView3"
@@ -210,7 +210,7 @@ on sale Sneakers"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 <!--
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -271,7 +271,7 @@ on sale Sneakers"
                     android:layout_marginTop="4dp"
                     android:text="Explorer"
                     android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    android:textSize="10sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -293,7 +293,7 @@ on sale Sneakers"
                     android:layout_marginTop="4dp"
                     android:text="Cart"
                     android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    android:textSize="10sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -315,7 +315,7 @@ on sale Sneakers"
                     android:layout_marginTop="4dp"
                     android:text="Favorite"
                     android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    android:textSize="10sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -337,7 +337,7 @@ on sale Sneakers"
                     android:layout_marginTop="4dp"
                     android:text="My Orders"
                     android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    android:textSize="10sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -359,7 +359,7 @@ on sale Sneakers"
                     android:layout_marginTop="4dp"
                     android:text="Profile"
                     android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    android:textSize="10sp" />
             </LinearLayout>
 
             <!-- كرر هذا للعناصر الأخرى مع تغيير الأيقونات والنصوص -->
